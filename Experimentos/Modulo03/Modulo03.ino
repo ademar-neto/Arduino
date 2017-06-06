@@ -5,7 +5,7 @@ ROBOCORE ARDUINO KIT INICIANTE
 *
 *
 **
-Módulo 4
+Módulo 3
 **
 \***************************************/
 const int LM35 = 0;
