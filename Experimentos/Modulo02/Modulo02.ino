@@ -1,11 +1,6 @@
 /***************************************\
 **
-ROBOCORE ARDUINO KIT INICIANTE
-**
-*
-*
-**
-Atividade do Módulo 2
+Acender e apagar 3 lampadas.
 **
 \***************************************/
 const int ledPin1 = 13;
