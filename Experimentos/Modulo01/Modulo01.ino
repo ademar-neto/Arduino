@@ -5,7 +5,7 @@ ROBOCORE ARDUINO KIT INICIANTE
 *
 *
 **
-Módulo 1
+Atividade do Módulo 1
 **
 \***************************************/
 const int ledPin = 13; //led no pino 13
