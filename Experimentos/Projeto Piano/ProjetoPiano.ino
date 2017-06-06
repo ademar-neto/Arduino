@@ -5,8 +5,6 @@ ROBOCORE ARDUINO KIT INICIANTE
 *
 *
 **
-Atividade do Modulo 3
-**
 Projeto Piano
 **
 \***************************************/
