@@ -1,0 +1,360 @@
+const int TAMANHO = 200;
+const int CURTO = 200;
+const int LONGO = 700;
+const int DELAY = 500;
+const int buzzer = 11;
+
+
+char texto[TAMANHO] = "sos";
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode (buzzer, OUTPUT);
+
+  for (int i = 0; i < strlen(texto); i++){
+
+    morse(texto[i]);
+    delay(500);
+  }
+
+  
+}
+
+void ponto (){
+
+    digitalWrite(buzzer, HIGH);
+    delay (CURTO);
+    digitalWrite(buzzer, LOW);
+    delay (DELAY);
+  
+}
+
+void traco(){
+
+    digitalWrite(buzzer, HIGH);
+    delay (LONGO);
+    digitalWrite(buzzer, LOW);
+    delay (DELAY);
+  
+}
+  
+
+void morse(char x){
+
+  if (x == 'a' || x == 'A'){
+
+
+  ponto();
+  traco();
+    
+  }
+
+  if (x == 'b' || x == 'B'){
+
+  traco();
+  ponto();
+  ponto();
+  ponto();
+   
+  }
+  
+  if (x == 'c' || x == 'C'){
+
+  traco();
+  ponto();
+  traco();
+  ponto();
+   
+  }
+
+
+
+   if (x == 'd' || x == 'D'){
+
+  traco();
+  ponto();
+  ponto();
+     
+  }
+  
+  if (x == 'e' || x == 'E'){
+
+  ponto();
+     
+  }
+
+  if (x == 'f' || x == 'F'){
+
+  ponto();
+  ponto();
+  traco();
+  ponto();
+     
+  }
+
+  if (x == 'g' || x == 'G'){
+
+  traco();
+  traco();
+  ponto();
+     
+  }
+
+  if (x == 'h' || x == 'H'){
+
+    ponto();
+    ponto();
+    ponto();
+    ponto();
+    
+  }
+
+  if (x == 'i' || x == 'I'){
+
+    ponto();
+    ponto();
+    
+  }
+
+  if (x == 'j' || x == 'J'){
+
+    ponto();
+    traco();
+    traco();
+    traco();
+    
+  }
+
+  if (x == 'k' || x == 'K'){
+
+    traco();
+    ponto();
+    traco();
+    
+  }
+
+  if (x == 'l' || x == 'L'){
+
+    ponto();
+    traco();
+    ponto();
+    ponto();
+    
+  }
+
+  if (x == 'm' || x == 'M'){
+
+    traco();
+    traco();
+    
+  }
+
+  if (x == 'n' || x == 'N'){
+
+    traco();
+    ponto();
+    
+  }
+
+  if (x == 'o' || x == 'O'){
+    
+  traco();
+  traco();
+  traco();
+    
+  }
+
+  if (x == 'p' || x == 'P'){
+
+    ponto();
+    traco();
+    traco();
+    ponto();
+  }
+
+  if (x == 'q' || x == 'Q'){
+
+    traco();
+    traco();
+    ponto();
+    traco();
+     
+  }
+
+  if (x == 'r' || x == 'R'){
+
+    ponto();
+    traco();
+    ponto();
+    
+  }
+  
+  if (x == 's' || x == 'S'){
+    
+  ponto();
+  ponto();
+  ponto();
+    
+  }
+
+  if (x == 't' || x == 'T'){
+
+    traco();
+  }
+
+  if (x == 'u' || x == 'U'){
+
+    ponto();
+    ponto();
+    traco();
+    
+  }
+
+  if (x == 'v' || x == 'V'){
+
+    ponto();
+    ponto();
+    ponto();
+    traco();
+    
+  }
+
+  if (x == 'w' || x == 'W'){
+
+    ponto();
+    traco();
+    traco();
+  }
+
+  if (x == 'x' || x == 'X'){
+
+    traco();
+    ponto();
+    ponto();
+    traco();
+    
+  }
+
+  if (x == 'y' || x == 'Y'){
+
+     traco();
+     ponto();
+     traco();
+     traco();
+  }
+
+  if (x == 'z' || x == 'Z'){
+
+    traco();
+    traco();
+    ponto();
+    ponto();
+   
+  }
+  
+  if (x == '1'){
+
+    ponto();
+    traco();
+    traco();
+    traco();
+    traco();
+   
+  }
+  
+  if (x == '2'){
+
+    ponto();
+    ponto();
+    traco();
+    traco();
+    traco();
+   
+  }
+
+  if (x == '3'){
+
+    ponto();
+    ponto();
+    ponto();
+    traco();
+    traco();
+   
+  }
+
+  if (x == '4'){
+
+    ponto();
+    ponto();
+    ponto();
+    ponto();
+    traco();
+   
+  }
+
+  if (x == '5'){
+
+    ponto();
+    ponto();
+    ponto();
+    ponto();
+    ponto();
+   
+  }
+
+  if (x == '6'){
+
+    traco();
+    ponto();
+    ponto();
+    ponto();
+    ponto();
+   
+  }
+
+  if (x == '7'){
+
+    traco();
+    traco();
+    ponto();
+    ponto();
+    ponto();
+   
+  }
+
+  if (x == '8'){
+
+    traco();
+    traco();
+    traco();
+    ponto();
+    ponto();
+   
+  }
+  
+  if (x == '9'){
+
+    traco();
+    traco();
+    traco();
+    traco();
+    ponto();
+   
+  }
+  
+  if (x == '0'){
+
+    traco();
+    traco();
+    traco();
+    traco();
+    traco();
+   
+  }
+
+}
+
+void loop() {
+
+
+}
